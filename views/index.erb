@@ -1,0 +1,22 @@
+<html>
+  <head></head>
+  <body>
+   <p> Guess a number from 1 - 100 </p>
+    <p>
+    <%if params["guess"] == number %>
+      The SECRET NUMBER is <%= number %>
+    <% end %>
+    </p>
+
+    <% if params["guess"] %>
+        <p> You guessed <%= guess %></p>
+    <%end %>
+    <h1><%= message %></h1>
+
+    <form>
+        <input type='text' name='guess' />
+        <input type='submit' value='Guess!' />
+    </form>
+
+  </body>
+</html>
